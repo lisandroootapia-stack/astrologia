@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astronomía e Informática</title>
+
+  <style>
+    body {
+      background-color: #C0D9D9;
+      background-image: url('fondo.gif');
+      background-repeat: repeat;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #000;
+    }
+
+    /* NAV */
+    nav {
+      background-color: #003366;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 12px 0;
+      z-index: 1000;
+    }
+    nav ul {
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      list-style: none;
+    }
+    nav ul li {
+      display: inline-block;
+      margin: 0 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+    nav ul li a:hover {
+      color: #FFD700;
+    }
+
+    /* CONTENEDOR */
+    .contenedor {
+      width: 960px;
+      margin: 100px auto 60px auto;
+      background: rgba(255,255,255,0.9);
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+
+    /* TITULOS */
+    h1, h2, h3 {
+      color: #003366;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      border-bottom: 2px solid #00F;
+      padding-bottom: 10px;
+    }
+    h2 {
+      background: #EAF2F2;
+      padding: 8px;
+      border-radius: 6px;
+      border: 2px solid #AAA;
+      margin-top: 40px;
+    }
+
+    /* COLUMNAS */
+    .columnas {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .columna-izq {
+      flex: 0 0 260px;
+    }
+    .columna-der {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    /* LISTAS */
+    #datos {
+      list-style: disc;
+      border-top: 3px dotted #F00;
+      border-bottom: 3px dotted #F00;
+      padding: 10px;
+    }
+    #contenido {
+      list-style: circle;
+      padding: 10px;
+      border: 2px dashed #0F0;
+      column-count: 3;
+      column-gap: 25px;
+    }
+
+    /* NOTICIAS */
+    .news-section {
+      background: #F0F8FF;
+      padding: 20px;
+      border: 2px solid #003366;
+      border-radius: 10px;
+    }
+    .news-item {
+      border-bottom: 1px solid #CCC;
+      padding: 10px 0;
+    }
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    /* FORMULARIO */
+    .cuestionario {
+      background: #F0F8FF;
+      padding: 25px;
+      border-radius: 10px;
+      border: 2px solid #003366;
+    }
+    .pregunta {
+      margin-bottom: 20px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: 1px solid #AAA;
+      margin-top: 5px;
+    }
+    button {
+      background: #003366;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background: #FFD700;
+      color: #000;
+    }
+
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    @media (max-width: 960px) {
+      .contenedor {
+        width: 95%;
+        padding: 20px;
+      }
+      #contenido {
+        column-count: 1;
+      }
+      .columnas {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="astronomia_detallada.html">Astronomía</a></li>
+      <li><a href="informatica_detallada.html">Informática</a></li>
+      <li><a href="relacion_detallada.html">Relación</a></li>
+      <li><a href="noticias_detalladas.html">Noticias</a></li>
+      <li><a href="#cuestionario">Cuestionario</a></li>
+    </ul>
+  </nav>
+
+  <div class="contenedor">
+    <h1>Astronomía e Informática: Exploración del Universo con Tecnología</h1>
+
+    <!-- SECCIÓN: ASTRONOMÍA E INFORMÁTICA -->
+    <div class="columnas">
+      <div class="columna-izq" id="astronomia">
+        <h2>Astronomía</h2>
+        <p>La astronomía estudia cuerpos celestes como estrellas, planetas, galaxias y fenómenos del universo.</p>
+        <ul id="datos">
+          <li><b>Observacional:</b> Telescopios terrestres y espaciales.</li>
+          <li><b>Teórica:</b> Modelos matemáticos del universo.</li>
+          <li><b>Cosmología:</b> Origen y evolución del cosmos.</li>
+          <li><b>Astrofísica:</b> Procesos internos de estrellas.</li>
+        </ul>
+<p><b>Ramas modernas de la astronomía:</b> Hoy en día, la astronomía incorpora tecnologías como interferometría, espectroscopía avanzada, análisis computacional de imágenes y astronomía multimensajero, que incluye ondas gravitacionales detectadas por observatorios como LIGO y Virgo. Estas herramientas permiten estudiar fenómenos extremos como fusiones de estrellas de neutrones o agujeros negros supermasivos.</p>
+      </div>
+
+      <div class="columna-der" id="informatica">
+        <h2>Informática</h2>
+        <p>La informática procesa información mediante hardware, software y redes.</p>
+        <ul id="contenido">
+          <li>Hardware</li>
+          <li>Software</li>
+          <li>Redes</li>
+          <li>Bases de Datos</li>
+          <li>IA y Big Data</li>
+          <li>Ciberseguridad</li>
+        </ul>
+<p><b>Importancia actual de la informática:</b> La informática impulsa prácticamente todas las áreas de la vida diaria. Desde los sistemas operativos que utilizamos a diario, hasta la ingeniería de software, el análisis de datos masivos, la robótica y el aprendizaje automático. Además, la informática es clave para áreas críticas como la investigación científica, la medicina, las comunicaciones globales y las infraestructuras inteligentes.</p>
+      </div>
+    </div>
+
+    <!-- RELACIÓN -->
+    <div id="relacion">
+      <h2>Relación entre Astronomía e Informática</h2>
+      <p>La astronomía moderna depende del análisis de datos, supercomputadoras e inteligencia artificial.</p>
+<p>Además, la integración de la informática en la astronomía hace posible la detección automática de planetas mediante algoritmos de machine learning, la simulación de estructuras a gran escala del universo y la predicción de fenómenos astronómicos con mayor precisión. Las bases de datos astronómicas, como las de la ESA y la NASA, contienen millones de registros que solo pueden analizarse gracias a supercomputadoras y sistemas distribuidos.</p>
+    </div>
+
+    <!-- NOTICIAS -->
+    <div id="noticias" class="news-section">
+      <h2>Últimas Noticias</h2>
+      <div class="news-item">
+        <strong>🌎 Descubren un exoplaneta habitable</strong>
+        <p>Un planeta similar a la Tierra fue hallado a 12 años luz.</p>
+      </div>
+<div class="news-item">
+<strong>🛰 Nuevas observaciones del telescopio James Webb</strong>
+<p>El telescopio espacial James Webb captó imágenes inéditas de estrellas recién formadas, permitiendo comprender mejor su proceso de nacimiento.</p>
+</div>
+<div class="news-item">
+<strong>🤖 Avances en IA para análisis del cielo profundo</strong>
+<p>Científicos desarrollaron un modelo de inteligencia artificial capaz de detectar galaxias oscuras invisibles al espectro óptico tradicional.</p>
+</div>
+      <div class="news-item">
+        <strong>💻 Supercomputadora simula el universo</strong>
+        <p>IA recrea miles de galaxias con alta precisión.</p>
+      </div>
+    </div>
+
+    <!-- CUESTIONARIO -->
+    <div class="cuestionario" id="cuestionario">
+      <h2>Cuestionario</h2>
+      <form>
+        <div class="pregunta">
+          <label>1. ¿Qué estudia la astronomía?</label>
+          <input type="text">
+        </div>
+        <div class="pregunta">
+          <label>2. Diferencia entre hardware y software</label>
+          <textarea rows="3"></textarea>
+        </div>
+        <div class="pregunta">
+          <label>3. ¿Cómo ayuda la informática a la astronomía?</label>
+          <textarea rows="3"></textarea>
+        </div>
+        <div class="pregunta">
+          <label>4. Herramientas informáticas usadas en astronomía</label>
+          <input type="text">
+        </div>
+        <div class="pregunta">
+          <label>5. ¿Qué aprendiste?</label>
+          <textarea rows="3"></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <footer>
+      © 2025 Astronomía e Informática | Creado por <b>Lisandro Tapia</b>
+    </footer>
+
+  </div>
+
+</body>
+</html>
